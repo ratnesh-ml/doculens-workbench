@@ -1,5 +1,7 @@
 # DocuLens Workbench
 
+[![CI](https://github.com/ratnesh-ml/doculens-workbench/actions/workflows/test.yml/badge.svg)](https://github.com/ratnesh-ml/doculens-workbench/actions/workflows/test.yml)
+
 DocuLens is a local-first document intelligence app for people who want to
 inspect evidence instead of trusting a fluent answer. It ingests Markdown,
 text, and CSV files; preserves source metadata; ranks passages with a small
@@ -56,6 +58,12 @@ The corpus is small and the scorer is lexical, so paraphrases can be missed.
 The next iteration would add embeddings, a reranker, document versioning,
 OCR for scanned pages, and a human-labelled evaluation set. The sample data
 is educational and should not be treated as authoritative policy.
+
+
+## Contribution and verification
+
+The repository includes contributor guidance in [`CONTRIBUTING.md`](CONTRIBUTING.md). GitHub Actions compiles the source and runs the test suite on every push and pull request. Use synthetic or permission-cleared documents only.
+
 
 ## License
 
