@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doculens-workbench"
+version = "0.1.0"
+description = "A local-first document evidence and retrieval workbench"
+requires-python = ">=3.10"
+dependencies = ["fastapi>=0.110", "uvicorn>=0.29"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+doculens = "doculens.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
