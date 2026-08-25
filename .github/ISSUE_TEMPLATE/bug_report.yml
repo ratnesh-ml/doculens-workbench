@@ -1,0 +1,24 @@
+name: Retrieval or citation bug
+description: Report a reproducible indexing, ranking, citation, abstention, API, or documentation issue.
+title: "bug: "
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed retrieval behavior
+      description: Include the command, query shape, or endpoint request and the result you observed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I did not include private documents, credentials, or confidential source text.
+          required: true
